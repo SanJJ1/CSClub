@@ -74,11 +74,11 @@ scroll-behavior: smooth;
   height: 300px;
 }
 
-#about {
+#codingStuff {
   filter: blur(0px);
 }
 
-#about #about2{
+#codingStuff #codingStuff2{
   filter:blur(0px)  !important;
 }
 .w3-wide {
@@ -90,6 +90,41 @@ scroll-behavior: smooth;
   cursor: pointer;
 }
 
+table{
+  background-color:rgb(179, 179, 179);
+  opacity: 1 !important;
+}
+
+tr{
+  font-size: 22px;
+  background-color:rgb(255, 255, 255);
+}
+
+
+th{
+  border-radius: 5px;
+  background-color:rgb(138, 130, 130);
+  font-size: 28px;
+  padding-left: 7px;
+
+}
+
+td{
+  border-radius: 5px;
+  opacity: 1;
+  padding-right: 70px;
+  padding-left: 7px;
+
+  font-weight:700
+}
+
+table{
+  background-color: rgba(206, 206, 206, 0.637)
+
+}
+
+
+
 /* Turn off parallax scrolling for tablets and phones */
 /* @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -100,18 +135,16 @@ scroll-behavior: smooth;
 </style>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .44;   transition: top .5s;">
+<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .54;   transition: top .5s;">
     <div class = "w3-animate-left	  w3-white w3-container" style = "font-size: 25px; font-weight: 700; color: rgb(255, 255, 255); " >
-        <a href="javascript:void(0);" class="w3-bar-item w3-round-large w3-button "  onclick="toggleFunction()" ><i class="fa fa-bars"></i></a>
-        <a href="#home" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fa fa-home"></i> <b> Meeting Agendas</b></a>
-        <a href="#about" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fa fa-user"></i> <b> Calendar</b></a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-round-large w3-hide- small"><i class="fas fa-briefcase"></i> <b> Important Links</b></a>
-        <a href="#contact" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fa fa-envelope"></i> <b> sdfsdf</b></a>
+        <a href="#codingStuff" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fas fa-laptop-code"></i><b> Coding Stuff</b></a>
+        <a href="#portfolio" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="far fa-calendar-alt"></i> <b> CS Events</b></a>
+        <a href="#contact" class="w3-bar-item w3-button w3-round-large w3-hide- small"><i class="fas fa-link"></i> <b> Important Links</b></a>
     </div>
 
   <!-- Navbar on small screens -->
   <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#codingStuff" class="w3-bar-item w3-button" onclick="toggleFunction()">codingStuff</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
@@ -123,88 +156,113 @@ scroll-behavior: smooth;
 
 
 <!-- First Parallax Image with Logo Text NIAGARA FALLS -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle w3-center  w3-white w3-round-xlarge" style="font-size:90px;  opacity: .43; width: 68%;  color: rgb(255, 255, 255); mix-blend-mode: difference; "  >
-    <p  style = " margin: 0px; padding: 0px;">
-        <b>Coffman Computer Science</b>
-    </p>
+<div class="bgimg-1" id="home" style = "height: 750px;">
+  <div style = "height:85%" class = " w3-display-container">
+      <div class="w3-display-middle w3-center   w3-white w3-round-xlarge" style="font-size:90px;  opacity: .43; width: 73%;  color: rgb(255, 255, 255); "  >
+          <p  style = "margin:0px;padding: 0px;">
+              <b>Coffman <br/>
+                Computer Science</b>
+          </p>
+        </div>
   </div>
+ 
 </div>
 
 
-<!-- Container (About Section) -->
+<!-- Container (codingStuff Section) -->
+     <!-- <div class = "w3-padding-32 w3-black" style = "filter: blur(2px);"></div> -->
 
 
-     <!-- <div class="w3-row ">
-
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love coding</em></p>
-        <p>Paragraph 1</p>
-        <div class="w3-col m6 w3-center ">
-            <p><b><i class="fa fa-user-o w3-margin-right"></i>Sanjay Janardhan</b></p><br>
-            <img src="../CSClub/flowersinwater.jpg" class="w3-round-large w3-image " alt="Photo of Me" width="500" height="333">
-        </div>
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-            <p>Paragraph 2</p>
-        </div>
-     </div> -->
-     <div class = "w3-padding-32 w3-yellow"></div>
-
-     <div class = "bgimg-4 w3-display-container" style = "height: 600px; width:100%; " id = "about">
-        <div class="w3-row w3-display-middle"	style = "height: 600px; width:80%;" id = "about2">
-            <div class=" w3-container w3-twothird" style = "height: 100%">
-              <h3 class = "w3-wide" style = "margin: 0px; padding: 0px; font-size: 48px">Big boi gang</h3>
-              <p class="w3-left"  style = "margin: 0px; padding: 0px; font-size: 18px">BLAH BLAH BLAH BLAH BLAH</p>      
-            </div>
-    
-
-            <div class="w3-container w3-rest" style = "height: 100%">
-              <div class = "w3-padding-32 "  style = "height: 100%">
-                  <img src="../CSClub/flowersinwater.jpg" class=" w3-round-large w3-image " alt="Photo of Me" style = " max-height:100%; width: auto;" >
-              </div>
-            </div>
-          </div>
-     </div>
-
-
- 
-     <div  class = "w3-margin-right  w3-margin-left	"	>
-     <div  class = "w3-margin-right  w3-margin-left	"	>
-     <div  class = "w3-margin-right  w3-margin-left	"	>
-
-    <div style="font-size:40px;"><b>Skills:</b></div>
-        <div class="w3-wide"  ><b><i class="fab fa-java"></i>Java</b></div>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-        </div>
-        <div class="w3-wide"><i class="fab fa-js-square"></i><b>JavaScript</b></div>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-        </div>
-        <div class="w3-wide"><i class="fab fa-python"></i></i><b>Python</b></div>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-        </div>
-     </div>
-     </div>
-     </div>
-
-
-    <div class = "w3-padding-16"></div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">200+</span><br>
-    Hours Coded
+<div class = "bgimg-4 w3-display-container w3-padding-32 w3-center" style = "height: 1700px; width:100%; " id = "codingStuff">
+  <div class = "w3-round-large">
+      <h3 class = "w3-wide" style = "padding-bottom: 24px; font-size: 72px; font-weight: bolder; color: rgb(141, 192, 216);  mix-blend-mode: difference;">   Coding Stuff</h3>
   </div>
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">12+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">2</span><br>
-    Applications Developed
-  </div>
+
+  <div class="w3-row w3-display-middle w3-white w3-round-large "	style = "padding-top: 40px; height: 70%; width:80%; opacity: 0.73; padding-left: 45px; padding-right: 45px;" >
+
+        
+        <table class = "w3-round-large" cellspacing="10" style="text-align:left">
+
+            <tr>
+              <th>Name/Link</th>
+              <th>What it is</th>
+              <th>Skill level</th>
+            </tr>
+
+            <tr>
+              <td><a href = "https://scratch.mit.edu/" target="_blank">Scratch</a></td>
+              <td>Good website for learning the absolute basics of programming logic. </td>
+              <td>Novice</td>
+            </tr>
+
+            <tr>
+              <td><a href = "https://www.youtube.com/playlist?list=PLFE2CE09D83EE3E28" target="_blank">thenewboston - Java</a></td>
+              <td>Java Youtube tutorials (videos 4-30) </td>
+              <td>Novice</td>
+            </tr>
+
+            <tr>
+              <td><a href = "https://www.codecademy.com/" target="_blank">Codecademy</a></td>
+              <td>Java tutorials</td>
+              <td>Novice</td>
+            </tr>
+
+            <tr>
+              <td><a href = "https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_" target="_blank">thenewboston - Python</a></td>
+              <td>Python youtube tutorials(videos 2-5, 7-18)</td>
+              <td>Novice</td>
+            </tr>
+
+            <tr>
+              <td><a href = "https://codingbat.com/java" target="_blank">Codingbat</a></td>
+              <td>Good Java practice</td>
+              <td>Novice</td>
+            </tr>
+
+            <tr>
+              <td><a href = "https://www.codiva.io" target="_blank">Codiva</a></td>
+              <td>Online Java IDE(integrated development environment)</td>
+              <td>Intermediate</td>
+            </tr>
+
+            <tr>
+                <td><a href = "https://repl.it/" target="_blank">Repl.it</a></td>
+                <td>Online IDE for many languages -useful for Python</td>
+                <td>Intermediate</td>
+            </tr>
+
+            <tr>
+                <td><a href = "https://www.codingame.com" target="_blank">Clash of Code</a></td>
+                <td>Fun coding competitions and activities</td>
+                <td>Intermediate</td>
+            </tr>
+
+            <tr>
+                <td><a href = "https://www.codewars.com" target="_blank">Code Wars</a></td>
+                <td>Coding problems ranging from “hard” to “what is life” </td>
+                <td>Advanced</td>
+            </tr>
+
+            <tr>
+                <td><a href = "https://robocode.sourceforge.io/" target="_blank">Robocode</a> <a href = "https://www.youtube.com/watch?v=O6nXfWvOo9s" target="_blank">Setup Video</a></td>
+                <td>AI Robot Java game  <br>   Helpful setup videos</td>
+                <td>Advanced</td>
+            </tr>
+
+            <tr>
+                <td><a href = "https://docs.google.com/spreadsheets/d/1RRKq2CgVr4UkEqy1UL9FmOjet9PCjX9WCRNau8c2j2c/edit#gid=0" target="_blank">Stanford CS</a></td>
+                <td>List of all of Stanford’s free online CS courses</td>
+                <td>Advanced</td>
+            </tr>
+            
+          </table>
+
+
+      
+
+    </div>
+
+
 </div>
 
 
@@ -219,53 +277,6 @@ scroll-behavior: smooth;
 
 
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" >
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale w3-hover-gray w3-hover-opacity	" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="../CSClub/flowersinwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-grayscale" alt="Sailing">
-    </div>
-
-    
-    <button class="w3-button w3-padding-large w3-round-large w3-grey" style="margin-top:64px; font-size:30px;">
-        <a href = 'https://github.com/SanJJ1' target = '_blank'>
-        <i class="fab fa-github" ></i>My Github </a></button>
-  </div>
-</div>
 
 
 
@@ -283,49 +294,8 @@ scroll-behavior: smooth;
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container "   id="contact">
-  <div class="w3-display-middle w3-wide" style="font-size:60px; color: rgb(255, 255, 255);  mix-blend-mode: difference;"><b>CONTACT</b></div>
+  <div class="w3-display-middle w3-wide" style="font-size:60px; color: rgb(128, 128, 128);  mix-blend-mode: difference;"><b>CONTACT</b></div>
 </div>
-
-
-
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-light-gray" >
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="../CSClub/flowersinwater.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Dublin, OH<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-white w3-xlarge w3-margin-right"></i>  21janardhansanjay@gmail.com<br>
-      </div>
-      <p>Leave a message <i class="far fa-comment"></i>
-
-        :</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input    w3-round" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input  w3-round" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input   w3-round" type="text" placeholder="Message" required name="Message">
-
-        <button class="w3-button w3-black w3-right w3-section w3-round" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-
 
 
 <!-- Footer -->
