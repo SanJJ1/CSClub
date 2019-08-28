@@ -6,6 +6,7 @@
 <title>Computer Science Club</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">                          <!--  w3 css library import-->
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400&display=swap" rel="stylesheet">     <!--  comfortaa font import-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   <!--  jquery import-->
@@ -48,26 +49,26 @@ scroll-behavior: smooth;
     font-size: 15px
   }
 
-/* First image (Logo. Full height) */
+/* First image (Coffman Homepage. Full height) */
 .bgimg-1 {
   /* background-image: url('../CSClub/niagaraFalls.jpg'); */
-  background-image: url('../CSClub/titlePage.jpg');
+  background-image: url('../CSClub/portfolioContact2.jpg');
 
   height: 670px;
   width: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (CS Stuff page) */
 .bgimg-2 {
-  background-image: url('../CSClub/tennisBall.jpg');
+  background-image: url('../CSClub/dopePic.jpg');
   min-height: 450px;
 }
 
-/* Third image (Contact) */
 .bgimg-3 {
-  background-image: url('../CSClub/portfolioContact.jpg');
-  height: 450px;
+  background-image: url('../CSClub/CSClubLogo.png');
+  min-height: 450px;
 }
+
 
 .bgimg-4 {
   background-image: url('../CSClub/portfolioHome.jpg');
@@ -114,7 +115,7 @@ td{
   opacity: 1;
   padding-right: 70px;
   padding-left: 7px;
-
+  font-size: 17px;
   font-weight:700
 }
 
@@ -135,11 +136,14 @@ table{
 </style>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .54;   transition: top .5s;">
-    <div class = "w3-animate-left	  w3-white w3-container" style = "font-size: 25px; font-weight: 700; color: rgb(255, 255, 255); " >
+<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .54; height:50px;  transition: top .5s;">
+    
+    <div class = "w3-animate-top w3-white w3-container" style = " padding-top: 5px; font-size: 25px; font-weight: 700; color: rgb(255, 255, 255); " >
         <a href="#codingStuff" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fas fa-laptop-code"></i><b> Coding Stuff</b></a>
         <a href="#portfolio" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="far fa-calendar-alt"></i> <b> CS Events</b></a>
         <a href="#contact" class="w3-bar-item w3-button w3-round-large w3-hide- small"><i class="fas fa-link"></i> <b> Important Links</b></a>
+        <img src="CSClubLogo.png" height = "70px" style = " float:right; filter: brightness(0.25);">
+
     </div>
 
   <!-- Navbar on small screens -->
@@ -159,7 +163,7 @@ table{
 <div class="bgimg-1" id="home" style = "height: 750px;">
   <div style = "height:85%" class = " w3-display-container">
       <div class="w3-display-middle w3-center   w3-white w3-round-xlarge" style="font-size:90px;  opacity: .43; width: 73%;  color: rgb(255, 255, 255); "  >
-          <p  style = "margin:0px;padding: 0px;">
+          <p  style = "margin:0px;padding: 0px; line-height:1.45em">
               <b>Coffman <br/>
                 Computer Science</b>
           </p>
@@ -173,12 +177,13 @@ table{
      <!-- <div class = "w3-padding-32 w3-black" style = "filter: blur(2px);"></div> -->
 
 
-<div class = "bgimg-4 w3-display-container w3-padding-32 w3-center" style = "height: 1700px; width:100%; " id = "codingStuff">
+<div class = "bgimg-4 w3-display-container  w3-center" style = "height: 1000px; width:100%; " id = "codingStuff">
   <div class = "w3-round-large">
-      <h3 class = "w3-wide" style = "padding-bottom: 24px; font-size: 72px; font-weight: bolder; color: rgb(141, 192, 216);  mix-blend-mode: difference;">   Coding Stuff</h3>
+      <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgb(255, 255, 255);  mix-blend-mode: difference;">   Coding Stuff</h3>
   </div>
 
-  <div class="w3-row w3-display-middle w3-white w3-round-large "	style = "padding-top: 40px; height: 70%; width:80%; opacity: 0.73; padding-left: 45px; padding-right: 45px;" >
+  <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 80%; width:75%; opacity: 0.73; padding-left: 25px; padding-right: 25px; margin-left: auto;
+  margin-right: auto;" >
 
         
         <table class = "w3-round-large" cellspacing="10" style="text-align:left">
@@ -266,20 +271,32 @@ table{
 </div>
 
 
-
-
-
-
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-grayscale w3-large"></p>
-  </div>
+<!--CS Events section-->
+<div class = "bgimg-2 w3-display-container  w3-center" style = "height: 700px; width:100%; " id = "portfolio">
+        <div class = "w3-round-large" >
+            <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgb(141, 192, 216);  mix-blend-mode: difference;">   CS Events</h3>
+        </div>
+      
+        <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 75%; width:75%; opacity: 0.73; padding-left: 25px; padding-right: 25px; margin-left: auto;
+        margin-right: auto;" >
+      
+              
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%230B8043&amp;ctz=America%2FNew_York&amp;src=NDMzYTUwOG5tOW9mc3FscGRkb3RmNnNiZ3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aGNzbGg5Nm1tNW9hbGdqZHN0MzVxOXRoMWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;color=%23D50000&amp;color=%23616161&amp;title=CS%20club" style="border-width:0" width="800" height="90%" frameborder="0" scrolling="no"></iframe>
+                  
+      
+      
+            
+      
+        </div>
+      
+      
 </div>
+
+
+
+
+
+
 
 
 
@@ -289,15 +306,15 @@ table{
 <footer class="w3-center w3-black w3-padding-16">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a style = "text-decoration: none;" href = "https://www.youtube.com/watch?v=7Zm1hPbmzPw&list=PL6JLm02ZicsiabkPDvkJURnLxpS5zM8EF&index=47&t=0s"><i class="fab fa-youtube  w3-hover-grayscale"></i></a>
+    <a style = "  text-decoration: none;"href = "https://www.youtube.com/watch?v=7Zm1hPbmzPw&list=PL6JLm02ZicsiabkPDvkJURnLxpS5zM8EF&index=47&t=0s"><i class="fab fa-youtube  w3-hover-grayscale"></i></a>
     <i class="fab fa-github-square  w3-hover-grayscale"></i>
     <i class="fab fa-reddit-alien"></i>
     <i class="fab fa-spotify"></i>
-    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
 </div>
 </footer>
 
-
+ 
 
 
 <!-- JavaScript -->
@@ -317,7 +334,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("myNavbar").style.top = "0";
   } else {
-    document.getElementById("myNavbar").style.top = "-70px";
+    document.getElementById("myNavbar").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
 }
