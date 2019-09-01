@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>Computer Science Club</title>
+<title>CS Club</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -98,9 +98,22 @@ table{
 
 tr{
   font-size: 22px;
-  background-color:rgb(255, 255, 255);
 }
 
+.novice
+{
+    background-color: rgb(42, 182, 29)
+}
+
+.intermediate
+{
+    background-color: rgb(241, 194, 50)    
+}
+
+.advanced
+{
+    background-color: rgb(224,102,102)
+}
 
 th{
   border-radius: 5px;
@@ -136,7 +149,7 @@ table{
 </style>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .54; height:50px;  transition: top .5s;">
+<div class="w3-top w3-card-4  " id="myNavbar" style= " opacity: .54; height:50px;  transition: top .3s;">
     
     <div class = "w3-animate-top w3-white w3-container" style = " padding-top: 5px; font-size: 25px; font-weight: 700; color: rgb(255, 255, 255); " >
         <a href="#codingStuff" class="w3-bar-item w3-round-large w3-button w3-hide-small"><i class="fas fa-laptop-code"></i><b> Coding Stuff</b></a>
@@ -159,7 +172,7 @@ table{
 
 
 
-<!-- First Parallax Image with Logo Text NIAGARA FALLS -->
+<!-- First Parallax Image with Logo Text COFFMAN COMPUTER SCIENCE Neural Network picture -->
 <div class="bgimg-1" id="home" style = "height: 750px;">
   <div style = "height:85%" class = " w3-display-container">
       <div class="w3-display-middle w3-center   w3-white w3-round-xlarge" style="font-size:90px;  opacity: .43; width: 73%;  color: rgb(255, 255, 255); "  >
@@ -175,14 +188,12 @@ table{
 
 <!-- Container (codingStuff Section) -->
      <!-- <div class = "w3-padding-32 w3-black" style = "filter: blur(2px);"></div> -->
-
-
 <div class = "bgimg-4 w3-display-container  w3-center" style = "height: 1000px; width:100%; " id = "codingStuff">
-  <div class = "w3-round-large">
-      <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgb(255, 255, 255);  mix-blend-mode: difference;">   Coding Stuff</h3>
+  <div class = "w3-round-large" style = "color: rgb(138, 130, 130)">
+      <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgba(255, 255, 255, 0.485); ">Coding Stuff</h3>
   </div>
 
-  <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 80%; width:75%; opacity: 0.73; padding-left: 25px; padding-right: 25px; margin-left: auto;
+  <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 80%; width:75%; opacity: 0.78; padding-left: 25px; padding-right: 25px; margin-left: auto;
   margin-right: auto;" >
 
         
@@ -194,67 +205,67 @@ table{
               <th>Skill level</th>
             </tr>
 
-            <tr>
+            <tr class = "novice">
               <td><a href = "https://scratch.mit.edu/" target="_blank">Scratch</a></td>
               <td>Good website for learning the absolute basics of programming logic. </td>
               <td>Novice</td>
             </tr>
 
-            <tr>
+            <tr class = "novice">
               <td><a href = "https://www.youtube.com/playlist?list=PLFE2CE09D83EE3E28" target="_blank">thenewboston - Java</a></td>
               <td>Java Youtube tutorials (videos 4-30) </td>
               <td>Novice</td>
             </tr>
 
-            <tr>
+            <tr class = "novice">
               <td><a href = "https://www.codecademy.com/" target="_blank">Codecademy</a></td>
               <td>Java tutorials</td>
               <td>Novice</td>
             </tr>
 
-            <tr>
+            <tr class = "novice">
               <td><a href = "https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_" target="_blank">thenewboston - Python</a></td>
               <td>Python youtube tutorials(videos 2-5, 7-18)</td>
               <td>Novice</td>
             </tr>
 
-            <tr>
+            <tr class = "novice">
               <td><a href = "https://codingbat.com/java" target="_blank">Codingbat</a></td>
               <td>Good Java practice</td>
               <td>Novice</td>
             </tr>
 
-            <tr>
+            <tr class = "intermediate">
               <td><a href = "https://www.codiva.io" target="_blank">Codiva</a></td>
               <td>Online Java IDE(integrated development environment)</td>
               <td>Intermediate</td>
             </tr>
 
-            <tr>
+            <tr class = "intermediate">
                 <td><a href = "https://repl.it/" target="_blank">Repl.it</a></td>
                 <td>Online IDE for many languages -useful for Python</td>
                 <td>Intermediate</td>
             </tr>
 
-            <tr>
+            <tr class = "intermediate">
                 <td><a href = "https://www.codingame.com" target="_blank">Clash of Code</a></td>
                 <td>Fun coding competitions and activities</td>
                 <td>Intermediate</td>
             </tr>
 
-            <tr>
+            <tr class = "advanced">
                 <td><a href = "https://www.codewars.com" target="_blank">Code Wars</a></td>
                 <td>Coding problems ranging from “hard” to “what is life” </td>
                 <td>Advanced</td>
             </tr>
 
-            <tr>
+            <tr class = "advanced">
                 <td><a href = "https://robocode.sourceforge.io/" target="_blank">Robocode</a> <a href = "https://www.youtube.com/watch?v=O6nXfWvOo9s" target="_blank">Setup Video</a></td>
                 <td>AI Robot Java game  <br>   Helpful setup videos</td>
                 <td>Advanced</td>
             </tr>
 
-            <tr>
+            <tr class = "advanced">
                 <td><a href = "https://docs.google.com/spreadsheets/d/1RRKq2CgVr4UkEqy1UL9FmOjet9PCjX9WCRNau8c2j2c/edit#gid=0" target="_blank">Stanford CS</a></td>
                 <td>List of all of Stanford’s free online CS courses</td>
                 <td>Advanced</td>
@@ -272,49 +283,37 @@ table{
 
 
 <!--CS Events section-->
-<div class = "bgimg-2 w3-display-container  w3-center" style = "height: 700px; width:100%; " id = "portfolio">
-        <div class = "w3-round-large" >
-            <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgb(141, 192, 216);  mix-blend-mode: difference;">   CS Events</h3>
-        </div>
-      
-        <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 75%; width:75%; opacity: 0.73; padding-left: 25px; padding-right: 25px; margin-left: auto;
-        margin-right: auto;" >
-      
-              
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%230B8043&amp;ctz=America%2FNew_York&amp;src=NDMzYTUwOG5tOW9mc3FscGRkb3RmNnNiZ3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aGNzbGg5Nm1tNW9hbGdqZHN0MzVxOXRoMWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;color=%23D50000&amp;color=%23616161&amp;title=CS%20club" style="border-width:0" width="800" height="90%" frameborder="0" scrolling="no"></iframe>
-                  
-      
-      
+<div class = "bgimg-2 w3-display-container  w3-center" style = "height: 900px; width:100%; " id = "portfolio">
+    <div class = "w3-round-large" >
+        <h3 class = "w3-wide" style = "padding: 0px; margin: 0px; font-size: 72px; font-weight: bolder; color: rgb(141, 192, 216);  mix-blend-mode: difference;">   CS Events</h3>
+    </div>
+    
+    <div class="w3-row w3-center w3-white w3-round-large "	style = "right:300px; padding-top: 25px; height: 75%; width:75%; opacity: 0.73; padding-left: 25px; padding-right: 25px; margin-left: auto;
+    margin-right: auto;" >
+    
             
-      
+    <iframe id = "gcal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%230B8043&amp;ctz=America%2FNew_York&amp;src=NDMzYTUwOG5tOW9mc3FscGRkb3RmNnNiZ3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aGNzbGg5Nm1tNW9hbGdqZHN0MzVxOXRoMWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;color=%23D50000&amp;color=%23616161&amp;title=CS%20club" style="border-width:0" width="800" height="90%" frameborder="0" scrolling="no"></iframe>
+                
+    </div>
+
+        
+<!-- Footer -->
+
+        <div id = "footer" class=" w3-card-4 w3-light-grey w3-bottom w3-center" style = "font-size:30px; opacity: 0.54; transition: bottom .3s; width: 100%; bottom:-80px; margin: 0px;padding: 0px">
+                <div class="" >
+
+                  <a href="#home"  style = "text-decoration: none;"><i class="fas fa-long-arrow-alt-up"></i></a>
+                  <a style = "text-decoration: none;" target="_blank" href = "https://www.youtube.com/watch?v=7Zm1hPbmzPw&list=PL6JLm02ZicsiabkPDvkJURnLxpS5zM8EF&index=47&t=0s"><i class="fab fa-youtube"></i></a>
+                  <a style = "text-decoration: none;" target="_blank" href = "https://cdn.vox-cdn.com/thumbor/xb-heShdGq4G32_R1-c8E9FpyQw=/0x0:1694x866/1200x800/filters:focal(712x298:982x568)/cdn.vox-cdn.com/uploads/chorus_image/image/63097414/Screen_Shot_2019_02_22_at_3.13.37_PM.0.png"><i class="fab fa-github-square  "></i></a>
+                  <a style = "text-decoration: none;" target="_blank" href = "https://i.kinja-img.com/gawker-media/image/upload/s--juUeIi2---/c_scale,f_auto,fl_progressive,q_80,w_800/leisgiafjskldldglz6t.jpg"><i class="fab fa-reddit-alien"></i></a>
+                  <a style = "text-decoration: none;" target="_blank" href = "https://cdn.shopify.com/s/files/1/0824/6367/products/variant_image_326d49f2-a8b4-4384-90f9-2d2e7a6d1604_grande.png?v=1548926172"><i class="fab fa-spotify"></i></a>
+                  <a style = "text-decoration: none;" target="_blank" href = "https://preview.redd.it/jd25yqv8xsf31.jpg?width=960&crop=smart&auto=webp&s=0a7d398b086e0d34f872df3945ed22b81c556dd0"><i class="fab fa-instagram  "></i></a>
+
+              </div>
         </div>
       
-      
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a style = "  text-decoration: none;"href = "https://www.youtube.com/watch?v=7Zm1hPbmzPw&list=PL6JLm02ZicsiabkPDvkJURnLxpS5zM8EF&index=47&t=0s"><i class="fab fa-youtube  w3-hover-grayscale"></i></a>
-    <i class="fab fa-github-square  w3-hover-grayscale"></i>
-    <i class="fab fa-reddit-alien"></i>
-    <i class="fab fa-spotify"></i>
-    <i class="fab fa-youtube"></i>
-</div>
-</footer>
-
- 
 
 
 <!-- JavaScript -->
@@ -333,11 +332,19 @@ window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("myNavbar").style.top = "0";
+    document.getElementById("footer").style.bottom = "-80px";
+
   } else {
     document.getElementById("myNavbar").style.top = "-80px";
+    document.getElementById("footer").style.bottom = "0";
+
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+
+
 
 
 // Used to toggle the menu on small screens when clicking on the menu button
